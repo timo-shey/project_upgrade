@@ -12,9 +12,6 @@ body {
   letter-spacing: 1px;
   font-weight: normal;
   overflow-x: hidden;
-  /* margin: 0 auto;
-  max-width: 1300px;
-  padding: 0 30px; */
 }
 
 a {
@@ -94,6 +91,7 @@ ul {
   z-index: 1;
   left: 80px;
   top: 85px;
+  border-radius: 10px;
 }
 
 .homepage .homeTop .text h1 {
@@ -113,6 +111,7 @@ ul {
   width: 900px;
   height: 500px;
   align-content: flex-start;
+  border-radius: 10px;
 }
 
 .homeTop .arrowDown .fa-arrow-down {
@@ -123,6 +122,7 @@ ul {
   color: #fff;
   font-size: 30px;
   background-image: linear-gradient(100deg, rgba(208, 207, 207, 0.799), white);
+  border-radius: 10px;
 }
 
 .homeTop .arrowDown .fa-arrow-down:hover {
@@ -223,6 +223,7 @@ ul {
   margin: 100px auto;
   max-width: 1300px;
   padding: 30px;
+  border-radius: 10px;
 }
 
 .aboutHeading {
@@ -248,12 +249,13 @@ ul {
   padding: 10px 15px;
   background-color: rgb(227, 224, 224);
   box-shadow: 0 10px 10px rgba(103, 103, 103, 0.29);
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 .aboutHeading .learnMoreBtn:hover {
-  padding: 12px 17px;
-  transform: scale(1.05);
+  /* padding: 12px 17px; */
+  transform: scale(1.06);
   box-shadow: 0 12px 12px rgba(103, 103, 103, 0.29);
 }
 
@@ -306,7 +308,8 @@ ul {
 .aboutContent .image .aboutBodyImg .smallImg {
   width: 300px;
   height: 150px;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 .aboutContent .image .aboutBodyImg .smallImg:hover {
@@ -320,7 +323,8 @@ ul {
 .aboutContent .image .aboutBodyImg .bigImg {
   width: 300px;
   height: 240px;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 .aboutContent .image .aboutBodyImg .bigImg:hover {
@@ -334,7 +338,7 @@ ul {
   max-width: 1300px;
   margin: 0 auto 100px;
   min-height: 100vh;
-  padding: 30px;
+  padding: 10px;
 }
 
 .productsHeading {
@@ -368,6 +372,7 @@ ul {
   width: 40px;
   height: 20px;
   position: relative;
+  border-radius: 10px;
 }
 
 .productsHeading .allProducts .allProductsIcon .fa-arrow-right {
@@ -407,7 +412,6 @@ ul {
   display: grid;
   max-width: 1300px;
   grid-template-columns: 33% 33% 33%;
-  /* grid-template-columns: repeat(auto-fill, minmax(320px, 32%)); */
   grid-template-rows: 50% 50%;
   gap: 10px;
   justify-content: center;
@@ -422,6 +426,7 @@ ul {
   padding: 10px;
   margin: 0 0 80px 0;
   position: relative;
+  border-radius: 10px;
 }
 
 .products .productsDisplay .indProduct .circle {
@@ -452,11 +457,11 @@ ul {
 .products .productsDisplay .indProduct .productsImg {
   width: 300px;
   height: 250px;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
 .products .productsDisplay .indProduct .productsImg:hover {
-  transform: translateY(-5%);
+  transform: translateY(-3%);
 }
 
 /* =========================== CLIENT TESTIMONY =========================== */
@@ -468,6 +473,7 @@ ul {
   min-height: 100vh;
   padding: 80px;
   background-color: rgb(246, 246, 246);
+  border-radius: 10px;
 }
 
 .clientTestimony .testimonyTxt h1 {
@@ -501,6 +507,7 @@ ul {
   width: 300px;
   height: 350px;
   margin-left: 150px;
+  border-radius: 10px;
 }
 
 .clientTestimony .testimonyBtm {
