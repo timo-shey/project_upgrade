@@ -1,0 +1,660 @@
+/* =========================== GENERAL =========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  overflow-x: hidden;
+  /* margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 30px; */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(107, 105, 105);
+}
+
+/* =========================== NAV =========================== */
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  min-height: 100px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header .main-nav .nav-links ul a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(3, 105, 71);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.header .main-nav .nav-links ul a:hover::after {
+  width: 100%;
+}
+
+.main-nav .logo h1 {
+  color: rgb(3, 105, 71);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+/* =========================== HOME =========================== */
+
+.homeTop {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.homepage .homeTop .dot {
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+.homepage .homeTop .text {
+  padding: 50px 10px;
+  background-color: rgba(255, 255, 255, 0.648);
+  backdrop-filter: blur(70px);
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  z-index: 1;
+  left: 80px;
+  top: 85px;
+}
+
+.homepage .homeTop .text h1 {
+  font-size: 45px;
+  color: rgb(3, 105, 71);
+  line-height: 55px;
+}
+
+.homepage .homeTop .text p {
+  font-size: 14px;
+  padding: 20px 70px 0 0;
+  color: rgb(107, 105, 105);
+  line-height: 1.2rem;
+}
+
+.homepage .homeTop .img .livingRoom {
+  width: 900px;
+  height: 500px;
+  align-content: flex-start;
+}
+
+.homeTop .arrowDown .fa-arrow-down {
+  padding: 30px 40px;
+  position: absolute;
+  bottom: -20px;
+  right: 80px;
+  color: #fff;
+  font-size: 30px;
+  background-image: linear-gradient(100deg, rgba(208, 207, 207, 0.799), white);
+}
+
+.homeTop .arrowDown .fa-arrow-down:hover {
+  font-size: 40px;
+  transition: 1s ease-in-out;
+}
+
+.homepage .homeMiddle {
+  background-color: rgb(246, 246, 246);
+}
+
+.homepage .homeMiddle .content {
+  margin-top: 50px;
+  padding: 20px 50px;
+  line-height: 3rem;
+  text-align: center;
+  justify-content: space-between;
+  display: block;
+}
+
+.homepage .homeMiddle .content .contentHeader {
+  letter-spacing: 5px;
+}
+
+.homepage .homeMiddle .content .contentHeader h1 {
+  font-size: 15px;
+  color: rgb(3, 105, 71);
+}
+
+.homepage .homeMiddle .content a {
+  margin-left: 90px;
+  color: rgb(165, 163, 163);
+}
+
+.homepage .homeMiddle .content .fa-microsoft {
+  margin-right: 5px;
+}
+
+.homepage .homeBottom {
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 100px auto;
+  padding: 0 30px;
+}
+
+.homepage .homeBottom .homeBottomText h1 {
+  color: rgb(3, 105, 71);
+  font-size: 35px;
+  line-height: 30px;
+}
+
+.homepage .homeBottom .homeBottomText h1 .fa-fire {
+  color: red;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.homepage .homeBottom .homeBottomText p {
+  color: rgb(165, 163, 163);
+}
+
+.homepage .homeBottom p {
+  font-size: 12px;
+  margin-top: 14px;
+  padding: 0 50px 0 0;
+}
+
+.homepage .homeBottom .box {
+  padding-left: 50px;
+}
+
+.homepage .homeBottom .box .fa-align-center {
+  font-size: 20px;
+  color: rgb(3, 105, 71);
+  margin-left: 10px;
+}
+
+.homepage .homeBottom .box .smallText {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(3, 105, 71);
+}
+
+.homepage .homeBottom .box .smallerText {
+  color: rgb(165, 163, 163);
+  font-size: 12px;
+  padding-right: 50px;
+}
+
+/* =========================== ABOUT =========================== */
+
+.about {
+  min-height: 100vh;
+  background-color: rgb(246, 246, 246);
+  padding: 50px 30px;
+  margin: 100px auto;
+  max-width: 1300px;
+  padding: 30px;
+}
+
+.aboutHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.aboutHeading .text h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: rgb(3, 105, 71);
+}
+
+.aboutHeading .text p {
+  font-size: 12px;
+  color: rgb(165, 163, 163);
+  line-height: 1.3rem;
+}
+
+.aboutHeading .learnMoreBtn {
+  padding: 10px 15px;
+  background-color: rgb(227, 224, 224);
+  box-shadow: 0 10px 10px rgba(103, 103, 103, 0.29);
+  transition: transform 0.5s ease;
+}
+
+.aboutHeading .learnMoreBtn:hover {
+  padding: 12px 17px;
+  transform: scale(1.05);
+  box-shadow: 0 12px 12px rgba(103, 103, 103, 0.29);
+}
+
+.aboutContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutContent .aboutBodyTxt {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.aboutContent .aboutBodyTxt .txt {
+  margin-bottom: 70px;
+  width: 50%;
+  height: 20%;
+  padding: 0 18px;
+}
+
+.aboutContent .aboutBodyTxt .txt h1 {
+  font-size: 35px;
+  color: rgb(3, 105, 71);
+  margin-bottom: 20px;
+}
+
+.aboutContent .aboutBodyTxt .txt p {
+  padding-right: 0 20px;
+}
+
+.aboutContent .aboutBodyTxt .txt .top {
+  font-size: 18px;
+  color: rgb(3, 105, 71);
+  margin-bottom: 10px;
+}
+
+.aboutContent .aboutBodyTxt .txt .down {
+  font-size: 12px;
+  color: rgb(165, 163, 163);
+}
+
+.aboutContent .image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.aboutContent .image .aboutBodyImg .smallImg {
+  width: 300px;
+  height: 150px;
+  transition: transform 0.5s ease;
+}
+
+.aboutContent .image .aboutBodyImg .smallImg:hover {
+  transform: scale(1.05);
+}
+
+.aboutContent .image:nth-child(2) {
+  align-items: center;
+}
+
+.aboutContent .image .aboutBodyImg .bigImg {
+  width: 300px;
+  height: 240px;
+  transition: transform 0.5s ease;
+}
+
+.aboutContent .image .aboutBodyImg .bigImg:hover {
+  transform: scale(1.05);
+}
+
+/* =========================== PRODUCTS =========================== */
+
+.products {
+  margin-top: 100px;
+  max-width: 1300px;
+  margin: 0 auto 100px;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.productsHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.productsHeading .text h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: rgb(3, 105, 71);
+}
+
+.productsHeading .allProducts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productsHeading .allProducts .allProductsTxt {
+  font-size: 14px;
+  color: rgb(165, 163, 163);
+  line-height: 1.5rem;
+}
+
+.productsHeading .allProducts .allProductsIcon {
+  margin-left: 40px;
+  background-color: rgb(227, 224, 224);
+  width: 40px;
+  height: 20px;
+  position: relative;
+}
+
+.productsHeading .allProducts .allProductsIcon .fa-arrow-right {
+  font-size: 18px;
+  position: absolute;
+  left: -5px;
+}
+
+.products .productsNav ul {
+  padding: 0 300px 80px;
+}
+
+.products .productsNav ul a {
+  color: rgb(165, 163, 163);
+}
+
+.products .productsNav ul a:visited {
+  color: rgb(3, 105, 71);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.products .productsNav ul a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(3, 105, 71);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.products .productsNav ul a:hover::after {
+  width: 100%;
+}
+
+.products .productsDisplay {
+  display: grid;
+  max-width: 1300px;
+  grid-template-columns: 33% 33% 33%;
+  /* grid-template-columns: repeat(auto-fill, minmax(320px, 32%)); */
+  grid-template-rows: 50% 50%;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .productsDisplay .indProduct {
+  height: 250px;
+  align-self: center;
+  justify-self: center;
+  background-color: rgb(246, 246, 246);
+  padding: 10px;
+  margin: 0 0 80px 0;
+  position: relative;
+}
+
+.products .productsDisplay .indProduct .circle {
+  background-color: rgb(132, 164, 154);
+  border-radius: 50%;
+  padding: 15px;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.products .productsDisplay .indProduct h1 {
+  padding: 20px 50px;
+  color: rgba(103, 103, 103);
+}
+
+.products .productsDisplay .indProduct span {
+  margin-left: 50px;
+  color: rgb(107, 105, 105);
+}
+
+.products .productsDisplay .indProduct .smallSpan {
+  margin-left: 20px;
+  text-decoration: line-through;
+  color: rgb(165, 163, 163);
+}
+
+.products .productsDisplay .indProduct .productsImg {
+  width: 300px;
+  height: 250px;
+  transition: transform 0.5s ease;
+}
+
+.products .productsDisplay .indProduct .productsImg:hover {
+  transform: translateY(-5%);
+}
+
+/* =========================== CLIENT TESTIMONY =========================== */
+
+.clientTestimony {
+  margin-top: 100px;
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 80px;
+  background-color: rgb(246, 246, 246);
+}
+
+.clientTestimony .testimonyTxt h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: rgb(3, 105, 71);
+  padding: 0 80px;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+}
+
+.clientTestimony .testimonyTxt p {
+  display: flex;
+  justify-content: center;
+  color: rgb(165, 163, 163);
+  margin-top: 40px;
+}
+
+.clientTestimony .testimonyTxt .diff {
+  margin-top: 10px;
+}
+
+.clientTestimony .testimonyBtm .testimonyImg {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.clientTestimony .testimonyBtm .testimonyImg img {
+  width: 300px;
+  height: 350px;
+  margin-left: 150px;
+}
+
+.clientTestimony .testimonyBtm {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.clientTestimony .testimonyBtm .testimonyBtmTxt {
+  width: 50%;
+  position: relative;
+}
+
+.clientTestimony .testimonyBtm .testimonyBtmTxt h1 {
+  font-size: 20px;
+  margin: 20px 0;
+  color: rgb(3, 105, 71);
+}
+
+.clientTestimony .testimonyBtm .testimonyBtmTxt p {
+  margin: 50px 0;
+  font-weight: 300;
+  color: rgb(3, 105, 71);
+  padding-right: 250px;
+  font-size: 16px;
+}
+
+.clientTestimony .testimonyBtm .testimonyBtmTxt h2 {
+  font-size: 20px;
+}
+
+.clientTestimony .testimonyBtm .testimonyBtmTxt h4 {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.clientTestimony .testimonyBtm .testimonyBtmTxt .fa-solid {
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  color: rgb(165, 163, 163);
+  transition: transform 0.5s ease;
+}
+
+.clientTestimony .testimonyBtm .testimonyBtmTxt .fa-circle-arrow-right {
+  left: 50px;
+}
+
+.clientTestimony .testimonyBtm .testimonyBtmTxt .fa-solid:hover {
+  transform: scale(1.3);
+}
+
+/* =========================== FOOTER =========================== */
+
+.footer {
+  background-color: rgb(3, 105, 71);
+  margin-top: 100px;
+  color: #fff;
+}
+
+.footer .topFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 200px;
+}
+
+.footer .topFooter .footerTxt h1 {
+  font-size: 40px;
+  padding-right: 100px;
+  /* width: 50%; */
+}
+
+.footer .topFooter .footerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer .topFooter .footerBtn .getStarted p {
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  color: rgb(3, 105, 71);
+  transition: transform 0.5s ease;
+}
+
+.footer .topFooter .footerBtn .getStarted:hover {
+  transform: scale(1.05);
+}
+
+.footer .topFooter .footerBtn .contactSales p {
+  /* margin-left: 30px; */
+  background-color: rgba(169, 215, 200, 0.487);
+  border-radius: 100px;
+  padding: 20px 30px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.5s ease;
+}
+
+.footer .topFooter .footerBtn .contactSales:hover {
+  transform: scale(1.05);
+}
+
+.footer hr {
+  margin: 0 200px;
+  color: rgba(42, 252, 182, 0.487);
+}
+
+.footer .bottomFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 200px 0;
+  padding-bottom: 20px;
+}
+
+.footer .bottomFooter .leftBottomFooter {
+  width: 30%;
+}
+
+.footer .bottomFooter .leftBottomFooter h1 {
+  color: #fff;
+}
+
+.footer .bottomFooter .leftBottomFooter p {
+  font-size: 12px;
+  margin-top: 10px;
+  padding-right: 100px;
+  font-weight: 300;
+}
+
+.footer .bottomFooter .rightBottomFooter {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .bottomFooter .rightBottomFooter .rBFA h1 {
+  font-size: 14px;
+}
+
+.footer .bottomFooter .rightBottomFooter .rBFA p {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.footer .bottomFooter .rightBottomFooter .rBFA a {
+  color: #fff;
+}
